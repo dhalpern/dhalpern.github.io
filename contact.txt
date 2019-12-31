@@ -1,0 +1,99 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+ 
+<!-- .container is main centered wrapper -->
+<div id="sidebar"></div>
+<div class="container"> 
+  <div class="row"></div>
+
+  <div class="row">
+    <div class="three columns menu">
+       <img  src="img/face.jpg" class="profile-pic" alt="profile picture" style="width:100%;max-width:250px">
+        <ul class="menu">
+          <li class="about">about</li>
+          <li class="publication">publication</li>
+          <li>cv</li>
+          <li>contact</li>
+        </ul>
+    </div>
+    <div class="nine columns">
+      <div class="about" style="padding-left: 80px;">
+        <h1 style="margin-bottom: 0px;">David J. Halpern</h1>
+        <h4 style="color:grey;margin-bottom: 5px;">Ph.D. candidate, New York University</h4>
+        <div class="icons">
+          <span class="icon">
+            <a href="https://github.com/dhalpern" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </span>  
+          <span class="icon">
+            <a href="https://twitter.com/david_j_halpern" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </span>
+          <span class="icon">
+            <a href="https://scholar.google.com/citations?user=OBKa3v4AAAAJ&hl=en" target="_blank" rel="noopener">
+              <i class="ai ai-google-scholar"></i>
+            </a>
+          </span>  
+        </div>
+        <p id="main"> You can contact me at david <a>dot</a> halpern <a>at</a> nyu <a>dot</a> edu</p>
+        <p id="about" style="display: none;">I'm a fifth-year phd in psychology in the Gureckis lab at NYU. </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$( ".about" ).click(function() {
+  var delay = 2000;
+  $( "#sidebar").toggleClass( "anim-trans" )
+  setTimeout(function(){$("#about").show()
+  $("#main").hide()}, delay)
+  ;
+});
+
+$( ".publication" ).click(function() {
+  var delay = 2000;
+  $( "#sidebar").toggleClass( "anim-trans" )
+  setTimeout(function(){window.location="publications.html"},delay)
+  ;
+});
+</script>
+
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
