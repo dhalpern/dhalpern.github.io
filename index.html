@@ -101,6 +101,13 @@ $( ".publication" ).click(function() {
   ;
 });
 
+$( ".publication" ).click(function() {
+  var delay = 2000;
+  $( "#sidebar").toggleClass( "anim-trans" )
+  setTimeout(function(){window.location="cv.pdf"},delay)
+  ;
+});
+
 $(".contact").click(function(){
   var delay = 2000;
   $( "#sidebar").toggleClass( "anim-trans" )
